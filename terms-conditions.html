@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Dashboard | Agroxa - Responsive Bootstrap 5 Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- DataTables -->
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+
+    <!-- Responsive datatable examples -->
+    <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body data-topbar="colored">
+
+    <!-- <body data-layout="horizontal" data-topbar="colored"> -->
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="assets/images/small-logo.png" alt="" height="20">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo.png" alt="" height="40" style="margin-left: -10px;">
+                            </span>
+                        </a>
+
+                        <a href="index.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo.png" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo.png" alt="" height="24">
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- Menu Icon -->
+
+                    <button type="button" class="btn px-3 font-size-24 header-item waves-effect" id="vertical-menu-btn">
+                        <i class="mdi mdi-menu"></i>
+                    </button>
+                </div>
+
+                <div class="d-flex">
+                    <div class="dropdown d-inline-block d-lg-none ms-2">
+                        <button type="button" class="btn header-item noti-icon waves-effect"
+                            id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="mdi mdi-magnify"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                            aria-labelledby="page-header-search-dropdown">
+
+                            <form class="p-3">
+                                <div class="form-group m-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search ..."
+                                            aria-label="Recipient's username">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit"><i
+                                                    class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- User -->
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-4.jpg"
+                                alt="Header Avatar">
+                        </button>
+
+                        <div class="dropdown-menu dropdown-menu-end">
+                                   <!-- item-->
+                                   <p class="text-black-50 m-0" style="text-align: center;">Welcome Admin</p>
+                                   <div class="dropdown-divider"></div>
+                                   <a class="dropdown-item text-primary" href="login.html"><i
+                                             class="mdi mdi-power font-size-16 align-middle me-2 text-primary"></i>
+                                        <span>Logout</span></a>
+                              </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+         <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li class="menu-title">Main</li>
+
+                        <li>
+                            <a href="index.html" class="waves-effect">
+                                <i class="mdi mdi-home"></i>
+                                <span>Dashboard</span>
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="fas fa-stamp"></i>
+                                <span>Add Stamp</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="add-stamp.html">Add Country Stamp</a></li>
+                                <li> <a href="add-theme-stamp.html">Add Theme Stamp</a></li>
+                                
+                            </ul>
+                        </li>
+
+                        
+                         <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-postage-stamp"></i>
+                                <span>Stamp List</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="all-stamps.html">Country Stamp List</a></li>
+                                <li> <a href="all-theme-stamps.html">Theme Stamp List</a></li>
+                                
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="all-users.html" class="waves-effect">
+                                <i class="mdi mdi-account-group"></i>
+                                <span> All Users</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-trash-can-outline"></i>
+                                <span>Deleted Users</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="admin-deleted.html">Admin Deleted Users</a></li>
+                                <li> <a href="user-deleted.html">User Deleted Account</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-account-tie"></i>
+                                <span>Master Records</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="all-country.html">Add Country</a></li>
+                                <li><a href="all-theme.html">Add Theme</a></li>
+                                <li> <a href="all-year.html">Year of Issue</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="fas fa-shield-virus"></i>
+                                <span>Terms and Privacy</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="terms-conditions.html">Terms and Condition</a></li>
+                                <li> <a href="privacy-policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="fas fa-newspaper"></i>
+                                <span>Philately News</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="add-new-news.html">Add New</a></li>
+                                <li> <a href="all-articles.html">Articles</a></li>
+                                <li> <a href="all-articles.html">Magazines</a></li>
+                                <li> <a href="all-articles.html">News</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="useful-links.html" class="waves-effect">
+                                <i class="ion ion-md-link"></i>
+                                <span>Usefull Links</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Request & Feedback</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="request-correction.html">Request Correction</a></li>
+                                <li><a href="feedback-suggestions.html">Feedback and Suggestions</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="fas fa-crown"></i>
+                                <span>Master Admin</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="admin-create-user.html">Create User</a></li>
+                                <li> <a href="list-users.html">List User</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="login.html" class="waves-effect">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>          </li>
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <div class="page-title">
+                                    <h2 class="mb-0 font-size-30">Terms and Condition</h2>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+
+                    <!-- Start Page-content-Wrapper -->
+
+                    <!-- Container-Fluid -->
+                   <div class="row" style="margin-top: -90px;">
+                        <div class="col-12">
+                            <div class="card-body">
+                                <div class=" mb-3">
+
+                                    <div class="card">
+                                        <div class="card-body">
+
+                                            <div>
+                                                <div class="mb-3">
+                                                    <form method="post">
+                                                        <textarea id="email-editor" name="area"
+                                                            placeholder=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ad alias placeat eum neque voluptatem mollitia minima adipisci dolorem, provident veniam nesciunt architecto eos unde et tempore facere, quis aut aperiam sit doloremque? Earum voluptates, odit asperiores tempore beatae explicabo dolores distinctio amet quisquam neque molestiae tempora ab at consequuntur praesentium aliquid iusto, illum ad? Iure sint velit ut sunt. Laudantium, ducimus laborum enim modi fugiat cupiditate fuga, aperiam id tenetur in, voluptatibus dignissimos? In explicabo a sint nostrum laboriosam, minima ex deleniti? Dignissimos, voluptas, quibusdam ullam odio numquam tenetur exercitationem reiciendis, expedita autem aperiam consequuntur cum a veniam deserunt alias ipsum? In commodi atque est, distinctio enim tempora incidunt dolores. Facilis, eveniet. Architecto dignissimos laborum voluptatum, ex illum dolor rem nostrum reprehenderit repudiandae enim ducimus, natus tempore, incidunt modi adipisci? Expedita recusandae error, corporis eius voluptatibus porro enim quam repellat adipisci sunt perferendis suscipit ipsum hic totam pariatur distinctio fugit repudiandae! Rerum excepturi dicta, incidunt earum, voluptatem tempore cupiditate natus obcaecati officia reprehenderit quo fugit velit dolorem delectus. Provident nostrum perspiciatis illo est ullam magnam nisi sequi accusamus dolore dicta, aperiam animi voluptate dolorem non ex quasi consequuntur ipsum id accusantium alias soluta. Voluptatum obcaecati expedita temporibus enim repellat!</textarea>
+
+                                                        <div style="text-align: center; margin-top: 30px;">
+                                                            <button type="button" style="margin-right: 20px;"
+                                                                class="btn btn-lg waves-effect waves-light">Cancel</button>
+                                                            <button type="button"
+                                                                class="btn btn-primary btn-lg waves-effect waves-light">Save Changes</button>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                                <!-- End Col -->
+                            </div>
+                            <!-- End Row -->
+
+                            <!-- End Page-content-wrapper -->
+
+                        </div>
+                    </div>
+                    <!-- Container-Fluid -->
+                    <!-- End Page-content -->
+
+
+                    <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <script>document.write(new Date().getFullYear())</script> © Agroxa <span
+                                class="d-none d-sm-inline-block">- Developed by <a href="https://impinfo.in" target="_blank">Imperial Info Systems</a></span>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+                </div>
+                <!-- end main content-->
+
+            </div>
+            <!-- End Page-content -->
+
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <script>document.write(new Date().getFullYear())</script> © Agroxa <span
+                                class="d-none d-sm-inline-block">- Developed by <a href="https://impinfo.in" target="_blank">Imperial Info Systems</a></span>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+     
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/common-sidebar.js"></script>
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+    <script src="assets/js/pages/email-editor.init.js"></script>
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+
+
+    <!--tinymce js-->
+    <script src="assets/libs/tinymce/tinymce.min.js"></script>
+
+    <!-- email editor init -->
+    <script src="assets/js/pages/email-editor.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

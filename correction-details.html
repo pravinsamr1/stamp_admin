@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+     <meta charset="utf-8" />
+     <title>Data Tables | Agroxa - Responsive Bootstrap 5 Admin Dashboard</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+     <meta content="Themesbrand" name="author" />
+     <!-- App favicon -->
+     <link rel="shortcut icon" href="assets/images/favicon.ico">
+     <!-- DataTables -->
+     <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+     <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
+          type="text/css" />
+
+     <!-- Responsive datatable examples -->
+     <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
+          type="text/css" />
+     <!-- Bootstrap Css -->
+     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+     <!-- Icons Css -->
+     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+     <!-- App Css-->
+     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="assets/css/custom.css">
+
+     <!-- Lightbox css -->
+     <link href="assets/libs/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body data-topbar="colored">
+
+     <!-- <body data-layout="horizontal" data-topbar="colored"> -->
+
+     <!-- Begin page -->
+     <div id="layout-wrapper">
+
+          <header id="page-topbar">
+               <div class="navbar-header">
+                    <div class="d-flex">
+
+                         <!-- LOGO -->
+                         <div class="navbar-brand-box">
+                              <a href="index.html" class="logo logo-dark">
+                                   <span class="logo-sm">
+                                        <img src="assets/images/small-logo.png" alt="" height="20">
+                                   </span>
+                                   <span class="logo-lg">
+                                        <img src="assets/images/logo.png" alt="" height="40"
+                                             style="margin-left: -10px;">
+                                   </span>
+                              </a>
+
+                              <a href="index.html" class="logo logo-light">
+                                   <span class="logo-sm">
+                                        <img src="assets/images/logo.png" alt="" height="22">
+                                   </span>
+                                   <span class="logo-lg">
+                                        <img src="assets/images/logo.png" alt="" height="24">
+                                   </span>
+                              </a>
+                         </div>
+
+                         <!-- Menu Icon -->
+
+                         <button type="button" class="btn px-3 font-size-24 header-item waves-effect"
+                              id="vertical-menu-btn">
+                              <i class="mdi mdi-menu"></i>
+                         </button>
+                    </div>
+
+                    <div class="d-flex">
+                         <div class="dropdown d-inline-block d-lg-none ms-2">
+                              <button type="button" class="btn header-item noti-icon waves-effect"
+                                   id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                   <i class="mdi mdi-magnify"></i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                   aria-labelledby="page-header-search-dropdown">
+
+                                   <form class="p-3">
+                                        <div class="form-group m-0">
+                                             <div class="input-group">
+                                                  <input type="text" class="form-control" placeholder="Search ..."
+                                                       aria-label="Recipient's username">
+                                                  <div class="input-group-append">
+                                                       <button class="btn btn-primary" type="submit"><i
+                                                                 class="mdi mdi-magnify"></i></button>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </form>
+                              </div>
+                         </div>
+
+                         <!-- User -->
+                         <div class="dropdown d-inline-block">
+                              <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                   <img class="rounded-circle header-profile-user"
+                                        src="assets/images/users/avatar-4.jpg" alt="Header Avatar">
+                              </button>
+
+                              <div class="dropdown-menu dropdown-menu-end">
+                                   <!-- item-->
+                                   <p class="text-black-50 m-0" style="text-align: center;">Welcome Admin</p>
+                                   <div class="dropdown-divider"></div>
+                                   <a class="dropdown-item text-primary" href="login.html"><i
+                                             class="mdi mdi-power font-size-16 align-middle me-2 text-primary"></i>
+                                        <span>Logout</span></a>
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+          </header>
+
+          <!-- ========== Left Sidebar Start ========== -->
+           <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li class="menu-title">Main</li>
+
+                        <li>
+                            <a href="index.html" class="waves-effect">
+                                <i class="mdi mdi-home"></i>
+                                <span>Dashboard</span>
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="fas fa-stamp"></i>
+                                <span>Add Stamp</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="add-stamp.html">Add Country Stamp</a></li>
+                                <li> <a href="add-theme-stamp.html">Add Theme Stamp</a></li>
+                                
+                            </ul>
+                        </li>
+
+                        
+                         <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-postage-stamp"></i>
+                                <span>Stamp List</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="all-stamps.html">Country Stamp List</a></li>
+                                <li> <a href="all-theme-stamps.html">Theme Stamp List</a></li>
+                                
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="all-users.html" class="waves-effect">
+                                <i class="mdi mdi-account-group"></i>
+                                <span> All Users</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-trash-can-outline"></i>
+                                <span>Deleted Users</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="admin-deleted.html">Admin Deleted Users</a></li>
+                                <li> <a href="user-deleted.html">User Deleted Account</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-account-tie"></i>
+                                <span>Master Records</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="all-country.html">Add Country</a></li>
+                                <li><a href="all-theme.html">Add Theme</a></li>
+                                <li> <a href="all-year.html">Year of Issue</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="fas fa-shield-virus"></i>
+                                <span>Terms and Privacy</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="terms-conditions.html">Terms and Condition</a></li>
+                                <li> <a href="privacy-policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="fas fa-newspaper"></i>
+                                <span>Philately News</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="add-new-news.html">Add New</a></li>
+                                <li> <a href="all-articles.html">Articles</a></li>
+                                <li> <a href="all-articles.html">Magazines</a></li>
+                                <li> <a href="all-articles.html">News</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="useful-links.html" class="waves-effect">
+                                <i class="ion ion-md-link"></i>
+                                <span>Usefull Links</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Request & Feedback</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="request-correction.html">Request Correction</a></li>
+                                <li><a href="feedback-suggestions.html">Feedback and Suggestions</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="fas fa-crown"></i>
+                                <span>Master Admin</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="admin-create-user.html">Create User</a></li>
+                                <li> <a href="list-users.html">List User</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="login.html" class="waves-effect">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+          <!-- Left Sidebar End -->
+
+
+
+          <!-- ============================================================== -->
+          <!-- Start right Content here -->
+          <!-- ============================================================== -->
+          <div class="main-content">
+
+               <div class="page-content">
+                    <div class="container-fluid">
+
+                         <!-- start page title -->
+                         <div class="row">
+                              <div class="col-1">
+                                   <div class="page-title-box d-flex align-items-center justify-content-between">
+                                        <div class="page-title backk-btnn">
+                                             <a href="request-correction.html"><h5>Back</h5></a>
+
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="col-11">
+                                   <div class="page-title-box d-flex align-items-center justify-content-between">
+                                        <div class="page-title">
+                                             <h2 class="mb-0 font-size-30">Request Correction</h2>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- end page title -->
+
+
+                         <!-- Start Page-content-Wrapper -->
+
+                         <!-- Container-Fluid -->
+                         <div class="row" style="margin-top: -90px;">
+                              <div class="col-12">
+                                   <div class="card">
+                                        <div class="card-body">
+                                             <div class="row" style="margin-top: 10px;">
+                                                  <div class="col-6">
+                                                       <div class="mb-3 row">
+                                                            <label for="example-text-input"
+                                                                 class="col-md-2 col-form-label">User ID</label>
+                                                            <div class="col-md-11 placeholder-size">
+                                                                 <input class="form-control form-control-lg" type="text"
+                                                                      placeholder="User ID" id="example-text-input"
+                                                                      value="UCP301" disabled>
+                                                            </div>
+                                                       </div>
+                                                       <!-- End Row -->
+                                                       <div class="mb-3 row">
+                                                            <label for="example-url-input" class="col-form-label">Phone
+                                                                 Number</label>
+                                                            <div class="col-md-11">
+                                                                 <input class="form-control form-control-lg" type="url"
+                                                                      placeholder="User Email" id="example-url-input"
+                                                                      value="97878383522" disabled>
+                                                            </div>
+                                                       </div>
+
+
+                                                  </div>
+
+                                                  <div class="col-6">
+                                                       <div class="mb-3 row">
+                                                            <label for="example-search-input"
+                                                                 class="col-form-label">Name</label>
+                                                            <div class="col-md-11 placeholder-size">
+                                                                 <input class="form-control form-control-lg" type="text"
+                                                                      placeholder="User ID" id="example-text-input"
+                                                                      value="Pravin Sam" disabled>
+                                                            </div>
+                                                       </div>
+                                                       <!-- End Row -->
+                                                       <div class="mb-3 row">
+                                                            <label for="example-tel-input"
+                                                                 class=" col-form-label">Catalog Number</label>
+                                                            <div class="col-md-11">
+                                                                 <input class="form-control form-control-lg" type="tel"
+                                                                      placeholder="Mobile Number" id="example-tel-input"
+                                                                      value="99DBC3827" disabled>
+                                                            </div>
+                                                       </div>
+
+
+
+                                                  </div>
+
+
+                                                  <div class="card-body col-6">
+
+                                                       <h4 class="card-title">Attached Image</h4>
+                                                       <div class="zoom-gallery">
+                                                            <a class="float-start" href="assets/images/small/img-3.jpg"
+                                                                 title="Project 1"><img
+                                                                      src="assets/images/small/img-3.jpg" alt=""
+                                                                      width="275"></a>
+                                                       </div>
+                                                  </div>
+
+                                                  <div class="col-6" style="margin-top: 40px;">
+                                                       <textarea
+                                                            style="padding: 20px;border: 1px solid #DBDBDB; height: 200px; width: 100%; font-size: 16px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam debitis reiciendis corrupti ad molestiae sed labore in excepturi sit nostrum minus veritatis qui ducimus quis facilis aspernatur quaerat, expedita tempore necessitatibus iste sint blanditiis ullam fugit quae! Unde, excepturi modi aspernatur magni ipsum velit repellendus odit nesciunt molestias quidem qui?
+                                                       </textarea>
+                                                  </div>
+                                             </div>
+
+                                             <!-- End Col -->
+                                        </div>
+                                        <!-- End Row -->
+
+                                   </div>
+                                   <!-- End Page-content-wrapper -->
+
+                              </div>
+                         </div>
+                         <!-- Container-Fluid -->
+                         <!-- End Page-content -->
+
+
+                         <footer class="footer">
+                              <div class="container-fluid">
+                                   <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                             <script>document.write(new Date().getFullYear())</script> © Agroxa <span
+                                                  class="d-none d-sm-inline-block">- Crafted with <i
+                                                       class="mdi mdi-heart text-primary"></i> by
+                                                  Themesbrand.</span>
+                                        </div>
+
+                                   </div>
+                              </div>
+                         </footer>
+                    </div>
+                    <!-- end main content-->
+
+               </div>
+          </div>
+          <!-- end main content-->
+
+     </div>
+     <!-- END layout-wrapper -->
+
+     <!-- Right Sidebar -->
+     <div class="right-bar">
+          <div data-simplebar class="h-100">
+               <div class="rightbar-title px-3 py-4">
+                    <a href="javascript:void(0);" class="right-bar-toggle float-end">
+                         <i class="mdi mdi-close noti-icon"></i>
+                    </a>
+                    <h5 class="m-0">Settings</h5>
+               </div>
+
+               <!-- Settings -->
+               <hr class="" />
+               <h6 class="text-center mb-0">Choose Layouts</h6>
+
+               <div class="p-4">
+                    <div class="mb-2">
+                         <img src="assets/images/layouts/layout-1.png" class="img-fluid img-thumbnail" alt="">
+                    </div>
+
+                    <div class="form-check form-switch mb-3">
+                         <input type="checkbox" class="form-check-input theme-choice" id="light-mode-switch" checked />
+                         <label class="form-check-label" for="light-mode-switch">Light Mode</label>
+                    </div>
+
+                    <div class="mb-2">
+                         <img src="assets/images/layouts/layout-2.png" class="img-fluid img-thumbnail" alt="">
+                    </div>
+
+                    <div class="form-check form-switch mb-3">
+                         <input type="checkbox" class="form-check-input theme-choice" id="dark-mode-switch"
+                              data-bsStyle="assets/css/bootstrap-dark.min.css"
+                              data-appStyle="assets/css/app-dark.min.css" />
+                         <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
+                    </div>
+
+                    <div class="mb-2">
+                         <img src="assets/images/layouts/layout-3.png" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="form-check form-switch mb-5">
+                         <input type="checkbox" class="form-check-input theme-choice" id="rtl-mode-switch"
+                              data-appStyle="assets/css/app-rtl.min.css" />
+                         <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
+                    </div>
+
+                    <h6 class="mb-2">Select Custom Colors</h6>
+
+                    <div class="form-check form-check-inline">
+                         <input class="form-check-input theme-color" type="radio" name="theme-mode" id="theme-default"
+                              value="default"
+                              onchange="document.documentElement.setAttribute('data-theme-mode', 'default')" checked>
+                         <label class="form-check-label" for="theme-default">Default</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                         <input class="form-check-input theme-color" type="radio" name="theme-mode" id="theme-red"
+                              value="red" onchange="document.documentElement.setAttribute('data-theme-mode', 'red')">
+                         <label class="form-check-label" for="theme-red">Red</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                         <input class="form-check-input theme-color" type="radio" name="theme-mode" id="theme-green"
+                              value="green"
+                              onchange="document.documentElement.setAttribute('data-theme-mode', 'green')">
+                         <label class="form-check-label" for="theme-green">Green</label>
+                    </div>
+               </div>
+
+          </div>
+          <!-- end slimscroll-menu-->
+     </div>
+     <!-- /Right-bar -->
+
+     <!-- Right bar overlay-->
+     <div class="rightbar-overlay"></div>
+
+     <div class="rightbar-overlay"></div>
+
+     <!-- JAVASCRIPT -->
+     <script src="assets/js/common-sidebar.js"></script>
+     <script src="assets/libs/jquery/jquery.min.js"></script>
+     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+     <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+     <script src="assets/libs/simplebar/simplebar.min.js"></script>
+     <script src="assets/libs/node-waves/waves.min.js"></script>
+     <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+     <script src="assets/js/pages/email-editor.init.js"></script>
+     <!-- App js -->
+     <script src="assets/js/app.js"></script>
+
+
+     <!--tinymce js-->
+     <script src="assets/libs/tinymce/tinymce.min.js"></script>
+
+     <!-- email editor init -->
+     <script src="assets/js/pages/email-editor.init.js"></script>
+
+     <!-- App js -->
+     <script src="assets/js/app.js"></script>
+     <!-- Magnific Popup-->
+     <script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+     <script>
+          $(document).ready(function () {
+               // Initialize Magnific Popup for zoom-gallery class
+               $('.zoom-gallery').magnificPopup({
+                    delegate: 'a', // child items selector, by clicking on it popup will open
+                    type: 'image',
+                    closeOnContentClick: false,
+                    closeBtnInside: false,
+                    mainClass: 'mfp-with-zoom mfp-img-mobile',
+                    image: {
+                         verticalFit: true,
+                    },
+                    gallery: {
+                         enabled: true
+                    },
+                    zoom: {
+                         enabled: true,
+                         duration: 300, // animation duration
+                         opener: function (element) {
+                              return element.find('img');
+                         }
+                    }
+               });
+          });
+     </script>
+
+</body>
+
+</html>
