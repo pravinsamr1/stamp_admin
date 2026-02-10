@@ -267,6 +267,13 @@
                 </div>
                 <!-- Sidebar -->
             </div>
+        </div>                  <span>Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
         </div>
         <!-- Left Sidebar End -->
 
@@ -285,7 +292,7 @@
                         <div class="col-12">
                             <div class="page-title-box d-flex align-items-center justify-content-between">
                                 <div class="page-title">
-                                    <h2 class="mb-0 font-size-30">Add Theme Stamps</h2>
+                                    <h2 class="mb-0 font-size-30">Edit Theme Stamps</h2>
                                 </div>
                             </div>
                         </div>
@@ -313,7 +320,7 @@
                                                     <select style="width: 88%;" id="themeSelect"
                                                         class="form-control adjnas select2 form-control-lg">
                                                         <option value="">--Select theme--</option>
-                                                        <option value="army">Army Stamp</option>
+                                                        <option value="army" selected>Army Stamp</option>
                                                         <option value="police">Police Stamp</option>
                                                         <option value="Uk">UK</option>
 
@@ -326,7 +333,7 @@
                                                         class="form-control adjnas select2 form-control-lg">
                                                         <option value="">--Select Year--</option>
                                                         <option value="2025">2025</option>
-                                                        <option value="2023">2023</option>
+                                                        <option value="2023" selected>2023</option>
                                                         <option value="2021">2021</option>
                                                         <option value="2019">2019</option>
                                                         <option value="2017">2017</option>
@@ -364,15 +371,18 @@
 
                                             <div class="main-select"
                                                 style="display: flex; align-items: center; gap: 15px; margin-bottom: 1px;">
+
                                                 <div class="col-6" style="margin-top: -12px;">
-                                                    <div class="col-md-11">
-                                                        <input class="form-control form-control-lg" type="tel"
-                                                            placeholder="Country Name" id="example-tel-input">
+                                                     <label for="example-url-input" class="col-md-6 col-form-label">Country Name</label>
+                                                     <div class="col-md-11">
+                                                         <input class="form-control form-control-lg" type="tel"
+                                                         placeholder="Country Name" id="example-tel-input">
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="mb-3 row">
-                                                        <div class="col-md-11">
+                                                    <div class="col-6">
+                                                        <div class="mb-3 row">
+                                                            <div class="col-md-11">
+                                                            <label for="example-url-input" class="col-md-6 col-form-label">Selected Year</label>
                                                             <input class="form-control country-filed form-control-lg" type="text"
                                                                 id="selectedYearInput" style="width: 97%;" placeholder="Selected Year"
                                                                 disabled>
@@ -388,10 +398,10 @@
                                             <div class="col-6">
 
                                                 <div class="mb-3 row">
-                                                    <!-- <label for="example-url-input" class="col-md-2 col-form-label">Face Value</label> -->
+                                                    <label for="example-url-input" class="col-md-6 col-form-label">Face Value</label>
                                                     <div class="col-md-11">
                                                         <input class="form-control form-control-lg" type="url"
-                                                            placeholder="Face Value" id="example-url-input" >
+                                                            placeholder="Face Value" id="example-url-input" value="300">
                                                     </div>
                                                 </div>
                                                 <!-- End Row -->
@@ -400,10 +410,10 @@
 
 
                                                 <div class="mb-3 row">
-                                                    <!-- <label for="example-tel-input" class="col-md-2 col-form-label">Catalog Number</label> -->
+                                                    <label for="example-tel-input" class="col-md-6 col-form-label">Catalog Number</label>
                                                     <div class="col-md-11">
                                                         <input class="form-control form-control-lg" type="tel"
-                                                            placeholder="Catalog Number" id="example-tel-input">
+                                                            placeholder="Catalog Number" id="example-tel-input" value="2025NDH324">
                                                     </div>
                                                 </div>
                                                 <!-- End Row -->
@@ -441,7 +451,7 @@
                                             <div class="col-6">
                                                 <!-- End Row -->
                                                 <div class="mb-3 row">
-                                                    <!-- <label for="example-search-input" class="col-md-2 col-form-label">Date of Issue</label> -->
+                                                    <label for="example-search-input" class="col-md-6 col-form-label">Date of Issue</label>
                                                     <div class="col-md-11">
                                                         <input class="form-control form-control-lg" type="search"
                                                             placeholder="Date of Issue (01/01/2002)"
@@ -452,10 +462,10 @@
 
 
                                                 <div class="mb-3 row">
-                                                    <!-- <label for="example-tel-input" class="col-md-2 col-form-label">Catalog Value</label> -->
+                                                    <label for="example-tel-input" class="col-md-6 col-form-label">Catalog Value</label>
                                                     <div class="col-md-11">
                                                         <input class="form-control form-control-lg" type="tel"
-                                                            placeholder="Catalog Value" id="example-tel-input">
+                                                            placeholder="Catalog Value" id="example-tel-input" value="400">
                                                     </div>
                                                 </div>
 
@@ -464,19 +474,19 @@
 
 
                                                 <div class="mb-3 row">
-                                                    <!-- <label for="example-tel-input" class="col-md-2 col-form-label">Format</label> -->
+                                                    <label for="example-tel-input" class="col-md-2 col-form-label">Format</label>
                                                     <div class="col-md-11">
                                                         <input class="form-control form-control-lg" type="tel"
-                                                            placeholder="Format" id="example-tel-input">
+                                                            placeholder="Format" id="example-tel-input" value="something">
                                                     </div>
                                                 </div>
                                                 <!-- End Row -->
 
                                                 <div class="mb-3 row">
-                                                    <!-- <label for="example-tel-input" class="col-md-2 col-form-label">Theme</label> -->
+                                                    <label for="example-tel-input" class="col-md-6 col-form-label">Quantity Printed</label>
                                                     <div class="col-md-11">
                                                         <input class="form-control form-control-lg" type="tel"
-                                                            placeholder="Quantity Printed" id="example-tel-input">
+                                                            placeholder="Quantity Printed" id="example-tel-input" value="300">
                                                     </div>
                                                 </div>
 
@@ -485,10 +495,10 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="mb-3 row">
-                                                <!-- <label for="example-search-input" class="col-md-2 col-form-label">Date of Issue</label> -->
+                                                <label for="example-search-input" class="col-md-2 col-form-label">Theme</label>
                                                 <div class="col-md-12" style="width: 96%;">
                                                     <input class="form-control form-control-lg" type="search"
-                                                        placeholder="Enter Stamp Theme" id="example-search-input">
+                                                        placeholder="Enter Stamp Theme" id="example-search-input" value="Something given by user">
                                                 </div>
                                             </div>
                                             <!-- End Row -->
@@ -501,7 +511,7 @@
                                                     <div>
                                                         <div class="mb-3">
                                                             <form method="post">
-                                                                <textarea id="email-editor" name="area"></textarea>
+                                                                <textarea id="email-editor" name="area">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut eius architecto impedit sunt hic minima officiis harum, amet dolorem eaque quae rem, ipsa vitae, in nobis tempore praesentium magni similique iste tenetur ipsum excepturi enim non. Ratione, quo molestias consequatur aut ad nihil ea adipisci natus architecto soluta tenetur? Earum ipsa velit explicabo animi, modi praesentium doloribus, nam iusto dolores provident quaerat cupiditate inventore tempore vero. Obcaecati eligendi iure totam enim consequatur adipisci quo labore maxime voluptatibus incidunt nostrum optio, ab voluptas corporis minus vero tempora nobis? Quasi voluptas, cupiditate veritatis placeat blanditiis, et sequi, totam expedita deserunt nulla rerum.</textarea>
                                                             </form>
                                                         </div>
                                                     </div>
@@ -512,8 +522,7 @@
 
                                             <div style="text-align: center;">
                                                 <button type="button"
-                                                    class="btn btn-primary btn-lg waves-effect waves-light">Add
-                                                    Stamp</button>
+                                                    class="btn btn-primary btn-lg waves-effect waves-light">Save Changes</button>
                                             </div>
 
                                         </div>

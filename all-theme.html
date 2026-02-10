@@ -171,7 +171,14 @@
                         <li>
                             <a href="all-users.html" class="waves-effect">
                                 <i class="mdi mdi-account-group"></i>
-                                <span> All Users</span>
+                                <span>Free Users</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="premium-users.html" class="waves-effect">
+                                <i class="fas fa-crown"></i>
+                                <span>Premium Users</span>
                             </a>
                         </li>
 
@@ -301,6 +308,7 @@
                                                 <tr>
                                                     <th>SI.NO</th>
                                                     <th>Theme</th>
+                                                    <th>Added By</th>
                                                     <th>Actions</th>
                                                 </tr>
                                             </thead>
@@ -308,6 +316,7 @@
                                                 <tr>
                                                     <td>1</td>
                                                     <td>Army Stamp</td>
+                                                    <td>Admin</td>
                                                     <td style="width: 100px">
                                                         <a href="user-details.html"
                                                             class="btn btn-outline-secondary btn-sm edit" title="Edit"
@@ -325,6 +334,7 @@
                                                 <tr>
                                                     <td>2</td>
                                                     <td>Police Stamp</td>
+                                                    <td>UCP301</td>
                                                     <td style="width: 100px">
                                                         <a href="user-details.html"
                                                             class="btn btn-outline-secondary btn-sm edit" title="Edit"
@@ -358,6 +368,17 @@
                                                                 <input type="text" class="form-control"
                                                                     id="country-link"
                                                                     placeholder="e.g. Army Stamp">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form id="country-form">
+                                                            <div class="mb-1">
+                                                                <label for="country-link"
+                                                                    class="col-form-label">Added By</label>
+                                                                <input type="text" class="form-control dis-adinn"
+                                                                    id="country-link"
+                                                                    value="Admin" disabled>
                                                             </div>
                                                         </form>
                                                     </div>
